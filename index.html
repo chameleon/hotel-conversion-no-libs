@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <title>Joe's Markup Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    
+  </head>
+  <body onclick="myFunction(event)">
+
+    <!-- SVG Sprite for jsut 7 Icons -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-left" viewBox="0 0 23 32">
+          <title>left</title>
+          <path d="M2.75 14.857q0-.464.339-.804L16.339.803q.339-.339.804-.339t.804.339l2.964 2.964q.339.339.339.804t-.339.804l-9.482 9.482 9.482 9.482q.339.339.339.804t-.339.804l-2.964 2.964q-.339.339-.804.339t-.804-.339l-13.25-13.25q-.339-.339-.339-.804z"/>
+        </symbol>
+        <symbol id="icon-up" viewBox="0 0 32 32">
+          <title>up</title>
+          <path d="M1.607 22.955q0-.473.339-.813L15.196 8.91q.339-.339.804-.339t.804.339l13.25 13.232q.339.339.339.813t-.339.813l-2.964 2.946q-.339.339-.804.339t-.804-.339L16 17.232l-9.482 9.482q-.339.339-.804.339t-.804-.339l-2.964-2.946q-.339-.339-.339-.813z"/>
+        </symbol>
+        <symbol id="icon-down" viewBox="0 0 32 32">
+          <title>down</title>
+          <path d="M1.607 13.616q0-.473.339-.813L4.91 9.857q.339-.339.804-.339t.804.339L16 19.339l9.482-9.482q.339-.339.804-.339t.804.339l2.964 2.946q.339.339.339.813t-.339.813l-13.25 13.232Q16.465 28 16 28t-.804-.339L1.946 14.429q-.339-.339-.339-.813z"/>
+        </symbol>
+        <symbol id="icon-mark" viewBox="0 0 16 32">
+          <title>mark</title>
+          <path d="M8 0C3.582 0 0 3.582 0 8s8 24 8 24 8-19.582 8-24-3.582-8-8-8zm0 12a4 4 0 110-8 4 4 0 010 8z"/>
+        </symbol>
+        <symbol id="icon-star" viewBox="0 0 30 32">
+          <title>star</title>
+          <path d="M0 11.554q0-.661 1-.821l8.964-1.304 4.018-8.125q.339-.732.875-.732t.875.732l4.018 8.125 8.964 1.304q1 .161 1 .821 0 .393-.464.857l-6.482 6.321 1.536 8.929q.018.125.018.357 0 .375-.188.634t-.545.259q-.339 0-.714-.214l-8.018-4.214-8.018 4.214q-.393.214-.714.214-.375 0-.563-.259t-.188-.634q0-.107.036-.357l1.536-8.929-6.5-6.321Q0 11.929 0 11.554z"/>
+        </symbol>
+        <symbol id="icon-phone" viewBox="0 0 25 32">
+          <title>phone</title>
+          <path d="M0 8.339q0-1.643.911-3.321 1-1.804 1.893-2.179.446-.196 1.223-.375t1.259-.179q.25 0 .375.054.321.107.946 1.357.196.339.536.964t.625 1.134.554.955q.054.071.313.446t.384.634.125.509q0 .357-.509.893t-1.107.982-1.107.946-.509.821q0 .161.089.402t.152.366.25.429.205.339q1.357 2.446 3.107 4.196t4.196 3.107q.036.018.339.205t.429.25.366.152.402.089q.321 0 .821-.509t.946-1.107.982-1.107.893-.509q.25 0 .509.125t.634.384.446.313q.446.268.955.554t1.134.625.964.536q1.25.625 1.357.946.054.125.054.375 0 .482-.179 1.259t-.375 1.223q-.375.893-2.179 1.893-1.679.911-3.321.911-.482 0-.938-.063t-1.027-.223-.848-.259-.991-.366-.875-.321q-1.75-.625-3.125-1.482-2.286-1.411-4.723-3.848t-3.848-4.723q-.857-1.375-1.482-3.125-.054-.161-.321-.875t-.366-.991-.259-.848-.223-1.027-.063-.938z"/>
+        </symbol>
+        <symbol id="icon-like" viewBox="0 0 30 32">
+          <title>like</title>
+          <path d="M0 26.286V14.857q0-.464.339-.804t.804-.339h5.143q.464 0 .804.339t.339.804v11.429q0 .464-.339.804t-.804.339H1.143q-.464 0-.804-.339T0 26.286zM2.286 24q0 .482.33.813t.813.33q.464 0 .804-.33T4.572 24q0-.464-.339-.804t-.804-.339q-.482 0-.813.339t-.33.804zm6.285 2.286V14.84q0-.446.321-.777t.768-.366q.429-.036 1.357-1.054t1.804-2.161q1.214-1.554 1.804-2.143.321-.321.554-.857t.313-.866.241-1.08q.125-.696.223-1.089t.348-.929.607-.893q.339-.339.804-.339.821 0 1.473.188t1.071.464.714.723.429.804.214.893.089.804.009.696q0 .679-.17 1.357t-.339 1.071-.491 1q-.054.107-.179.321t-.196.393-.143.429h4.946q1.393 0 2.411 1.018t1.018 2.411q0 1.536-.982 2.661.268.786.268 1.357.054 1.357-.768 2.446.304 1 0 2.089-.268 1.018-.964 1.679.161 2-.875 3.232-1.143 1.357-3.518 1.393h-2.304q-1.179 0-2.571-.277t-2.17-.518-2.152-.705q-2.196-.768-2.821-.786-.464-.018-.804-.348t-.339-.795z"/>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="page-container">
+      <div class="back-link">
+        <svg class="icon icon-left">
+          <use xlink:href="#icon-left"></use>
+        </svg>
+        <div class="back-link_text">SEE ALL LAS VEGAS HOTELS</div>
+      </div>
+      <div class="page-content">
+        <header>
+          <!-- JSON src-->
+          <img id="hotelThumbnailUrl" class="header-thumbnail" src="" alt="header thumbnail">
+          <div class="header-text-container">
+            <div class="header-text-wrapper">
+              <div class="header-title-main">
+                <div class="header-title-and-stars">
+                  <h1 id="headerTitle" class="header-title">
+                    <!-- JSON -->
+                  </h1>
+                  <div class="header-stars">
+                    <svg class="icon icon-star">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon icon-star">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <div id="starBlocker" class="star-blocker">
+                    </div>
+                  </div>
+                </div>
+                <div class="header-title-metrics">
+                  <div id="contentMetricsLocation" class="header-metric">
+                    <svg class="icon icon-mark">
+                      <use xlink:href="#icon-mark">
+                      </use>
+                    </svg>
+                    <span id="locationArea">
+                      <!-- JSON -->
+                    </span>
+                  </div>
+                  <!-- JSON href -->
+                  <a id="phoneNumber" class="header-metric" href="#">
+                    <svg class="icon icon-phone">
+                      <use xlink:href="#icon-phone"></use>
+                    </svg>
+                    <span id="phoneNumberSpan">
+                      <!-- JSON -->
+                    </span>
+                  </a>
+                  <div class="header-metric">
+                    <svg class="icon icon-like">
+                      <use xlink:href="#icon-like"></use>
+                    </svg>
+                    Best Price Guarantee
+                  </div>
+                </div>
+              </div>
+              <div class="content-price">
+                <div id="contentPriceNumber" class="content-price_number">
+                  <!-- JSON -->
+                </div>
+                <div class="content-price_description">HOTEL ROOMS FROM
+                </div>
+              </div>
+            </div>
+            <nav>
+              <div id="tab-1" class="tab tab--selected">
+                DESCRIPTION
+              </div>
+              <div id="tab-2" class="tab">
+                DETAILS
+              </div>
+              <div id="tab-3" class="tab">
+                LOCATION
+              </div>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <aside class="sidebar">
+            <div id="sidebarList" class="sidebar-list">
+              <!-- JSON -->
+            </div>
+          </aside>
+          <section id="contentContainer-1" class="content-container  hotel-description">
+            <div id="descriptionText" class="content-text">
+              <p id="descriptionText-p">
+
+                <!-- JSON -->
+              </p>
+            </div>
+            <div id="showDescription" class="text-preview-link">
+              SHOW FULL DESCRIPTION
+              <svg class="icon icon-down">
+                <use xlink:href="#icon-down"/>
+              </svg>
+            </div>
+            <div id="hideDescription" class="text-preview-link  hidden">
+              HIDE FULL DESCRIPTION
+              <svg class="icon icon-up">
+                <use xlink:href="#icon-up"/>
+              </svg>
+            </div>
+          </section>
+          <section id="contentContainer-2" class="content-container  hotel-details  hidden">
+            <div id="detailsText" class="content-text">
+              <!--- JSON  -->                   
+            </div>
+            <div id="showDetails" class="text-preview-link">
+              VIEW MORE DETAILS
+              <svg class="icon icon-down">
+                <use xlink:href="#icon-down"/>
+              </svg>
+            </div>
+            <div id="hideDetails" class="text-preview-link hidden">
+              VIEW FEWER DETAILS
+              <svg class="icon icon-up">
+                <use xlink:href="#icon-up"/>
+              </svg>
+            </div>
+          </section>
+          <section id="contentContainer-3" class="content-container  hotel-location  hidden">
+            <div class="location-content">
+              <div id="mapSpacer" class="map-spacer hidden">
+              </div>
+              <div class="hotel-address">
+                <svg class="icon icon-mark">
+                  <use xlink:href="#icon-mark">
+                  </use>
+                </svg>
+                <address id="hotelAddress">
+                  <!-- JSON -->
+                </address>
+              </div>
+              <img id="hotelMapUrl" class="map-image" src="" alt="map image">
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

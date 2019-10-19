@@ -1,0 +1,456 @@
+/* I - CSS RESETs (ERIC MEYER) http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     /*font: inherit;*/
+     vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+body {
+     line-height: 1;
+}
+ol, ul {
+     list-style: none;
+}
+blockquote, q {
+     quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+     content: "";
+     content: none;
+}
+table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+/* Custom resets */
+button {
+     padding: 0;
+}
+input {
+     background-color: inherit;
+}
+/* end CSS Reset */
+
+
+/* I - CSS RESETs (ERIC MEYER) http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end CSS Reset */
+
+
+
+
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+
+	/*IE11 flexbox */
+	/*display: flex;*/
+    flex-flow:column nowrap;
+    height:100vh;
+    min-height:100%;  
+}
+/*also for IE 11 flexbox:*/
+/* IE EDGE overflow fix */ 
+/*main{
+    flex:1 1 auto;
+    overflow:hidden;  
+}*/
+
+body {
+	color: #6b6c7a;
+	font-family: sans-serif;
+	background-color: grey;
+	font-family: Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.no-height {
+	height: 0 !important;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.icon {
+	display: inline-block;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+	width: 17px;
+	height: 17px;
+	pointer-events: none;
+}
+
+.icon-left {
+	color: #ffffff;
+	padding: 2px 2px 2px 0;
+	border-radius: 4000px;
+	background-color: #895e95;
+}
+
+.icon-up {
+	color: #ffffff;
+	padding: 0 2px 2px;
+	border-radius: 4000px;
+	background-color: #895e95;
+}
+	
+.icon-down {
+	color: #ffffff;
+	padding: 2px;
+	border-radius: 4000px;
+	background-color: #895e95;
+}
+
+.icon-star {
+	color: #9999a3;
+	margin: 0 0 5px;
+}
+
+.page-container {
+	width: 100%;
+	max-width: 990px;
+	min-width: 990px;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding-left: 16px;
+}
+
+.page-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.back-link {
+	height: 65px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+}
+
+.back-link_text {
+	color: #895e95;
+	font-size: 12px;
+	padding-left: 8px;
+}
+
+.sidebar {
+	width: 248px;
+	order: 2;
+	background-color: #efefef;
+	font-size: 15px;
+	color: #895e95;
+	padding: 24px 14px 0 16px;
+	margin-top: 30px;
+
+}
+
+.sidebar-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 22px;
+	cursor: pointer;
+}
+
+.sidebar-item_title {
+	flex: 1 1 0;
+}
+
+.sidebar-item_price {
+	color: #6b6c7a;
+	margin-left: 10px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 0;
+}
+
+header {
+	display: flex;
+	height: 175px;
+	flex: 1 1 0;
+}
+
+.header-thumbnail {
+	width: 248px;
+}
+
+.header-text-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px 0 30px;
+}
+
+.header-text-wrapper {
+	flex: 1;
+	display: flex;
+}
+
+.header-title-main {
+	flex: 1;
+	display: flex;
+}
+
+.content-price {
+	width: 166px;
+	display: flex;
+	flex-direction: column;
+}
+
+.content-price_number {
+	font-size: 54px;
+	font-weight: bold;
+	color: #f48721;
+	margin-bottom: 5px;
+}
+
+.content-price_description {
+	font-size: 14px;
+}
+
+.header-title-main {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-title-and-stars {
+	display: flex;
+	margin-bottom: 10px;
+	align-items: flex-end;
+}
+
+h1 {
+	color: #6b6c7a;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.header-stars {
+	margin-left: 15px;
+	position: relative;
+	display: flex;
+}
+
+.star-blocker {
+	height: 17px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 2;
+	position: absolute;
+}
+
+.header-title-metrics {
+	display: flex;
+	font-size: 15px;
+}
+
+.header-metric {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.header-metric>.icon {
+	margin-right: 3px;
+	width: 18px;
+	height: 18px;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+}
+
+.tab {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	background-color: #895e95;
+	font-size: 18px;
+	color: #dab6e0;
+	border-bottom: 4px solid #895e95;
+	padding-top: 4px;
+}
+
+.tab--selected {
+	color: #fff;
+	border-bottom: 4px solid #733080;
+}
+
+.tab:hover {
+	cursor: pointer;
+	color: #fff;
+	border-bottom: 4px solid #dab6e0;
+}
+
+.details-text,
+.location-text {
+	display: none;
+}
+
+.content-text {
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	padding: 0 16px;
+	color: #000;
+	font-weight: 200;
+}
+
+.content-text>p {
+	margin-top: 4px;
+}
+.content-text>p:last-of-type {
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 16px;
+	line-height: 22px;
+}
+
+.content-container {
+	flex: 1;
+	order: 1;
+	overflow: hidden;
+	padding: 22px 20px 0 30px;
+}
+
+.text-preview-link {
+	cursor: pointer;
+	padding: 0 16px;
+	color: #895e95;
+	font-size: 14px;
+	padding-top: 15px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: white;
+}
+
+.text-preview-link>svg {
+	margin-left: 5px;
+}
+
+.text-preview-link:hover {
+	text-decoration: underline;
+}
+
+.location-content {
+	width: 100%;
+	padding: 0 16px;
+}
+
+#locationArea {
+	pointer-events: none;
+}
+address{
+	font-style: normal;
+}
+.hotel-address {
+	font-size: 15px;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 5px;
+}
+
+.hotel-address>.icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 3px;
+}
+
+.map-spacer {
+	background-color: yellow;
+	transition: all 1.25s ease-out;
+}
+
+.map-image {
+	width: 100%;
+}
+
+/*Continue to make responsive later, 1 was about 560*/
+@media (min-width: 1px) {
+    main {
+        flex-direction: row;
+    }
+    .sidebar{
+    	/*order: 1;*/
+    	/*max-width: 248px;*/
+    }
+    .content-container{
+    	order:2;
+    }
+}
